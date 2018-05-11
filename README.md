@@ -1,7 +1,8 @@
 [Vim配置及使用技巧](https://www.cnblogs.com/vachester/p/5659648.html)<br>
 [vundle: vim插件管理安装之错误总结](https://blog.csdn.net/u013475704/article/details/52295157)<br>
 # 1、下载vim插件管理器
-    `git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim` 如果目录.vim/bundle不存在请先创建<br>
+    `git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim`
+    如果目录.vim/bundle不存在请先创建
 # 2、安装AStyle；<br>
 # 3、安装ctags；<br>
 ## 另外，附上vim环境中其他较为好用的快捷键<br>
@@ -27,7 +28,7 @@ endfunction
     nmap <F10> :call UpdateCtags()<CR>
 ```
 ## 添加系统目录tags
-    `ctags --fields=+iaSl --extra=+q -R -f ~/.vim/systags /usr/include /usr/local/include` <br>
-    `ctags -R -I --c++-kinds=+p+l+x+c+d+e+f+g+m+n+s+t+u+v --fields=+iaSl --extra=+q ` <br>
+    `ctags --fields=+iaSl --extra=+q -R -f ~/.vim/systags /usr/include /usr/local/include`
+    `ctags -R -I --c++-kinds=+p+l+x+c+d+e+f+g+m+n+s+t+u+v --fields=+iaSl --extra=+q`
 # 4、安装命令行ag
-    `apt-get install silversearcher-ag`<br>
+    `apt-get install silversearcher-ag`
