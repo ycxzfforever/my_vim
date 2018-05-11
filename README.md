@@ -37,6 +37,12 @@ endfunction
 # 5、下载vimrc.local
 `wget https://raw.githubusercontent.com/ycxzfforever/my_vim/master/vimrc.local`<br>
 拷贝到vim配置文件夹下`sudo cp vimrc.local /etc/vim/`
+如果/etc/vim/vimrc中没有以下代码，请加上
+```vim
+if filereadable("/etc/vim/vimrc.local")
+    source /etc/vim/vimrc.local
+endif
+```
 # 6、安装相应插件
 执行`:PluginInstall`后便会自动安装所有插件，时间视网速而定，插件都不大，一般10分钟以内
 # 7、安装ack(ubuntu下为ack-grep)
