@@ -226,7 +226,7 @@ nmap <silent> <Leader>sw :FSHere<cr>
 "==============tags相关设置 开始===============
 "如果经常在不同工程里查阅代码，那么可以添加：
 set tags+=tags;
-set tags+=$HOME/systags
+set tags+=$HOME/.vim/systags
 set autochdir
 function! UpdateCtags()
     let curdir=getcwd()

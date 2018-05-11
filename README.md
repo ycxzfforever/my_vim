@@ -3,8 +3,10 @@
 # 1、下载vim插件管理器
 `git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim`<br>
 如果目录.vim/bundle不存在请先创建
-# 2、安装AStyle；<br>
-# 3、安装ctags；<br>
+# 2、安装AStyle
+`sudo apt-get install astyle`
+# 3、安装ctags
+`sudo apt-get install ctags`
 ## 另外，附上vim环境中其他较为好用的快捷键<br>
         * 定位至当前光光标所指单词的下一次出现的地方
         # 定位至当前光光标所指单词的上一次出现的地方
@@ -28,7 +30,25 @@ endfunction
     nmap <F10> :call UpdateCtags()<CR>
 ```
 ## 添加系统目录tags
-`ctags --fields=+iaSl --extra=+q -R -f ~/.vim/systags /usr/include /usr/local/include`<br>
-`ctags -R -I --c++-kinds=+p+l+x+c+d+e+f+g+m+n+s+t+u+v --fields=+iaSl --extra=+q`<br>
+系统目录tags：`ctags --fields=+iaSl --extra=+q -R -f ~/.vim/systags /usr/include /usr/local/include`<br>
+工程目录tags：`ctags -R -I --c++-kinds=+p+l+x+c+d+e+f+g+m+n+s+t+u+v --fields=+iaSl --extra=+q`<br>
 # 4、安装命令行ag
-`apt-get install silversearcher-ag`
+`sudo apt-get install silversearcher-ag`
+# 5、下载vimrc.local
+`wget https://raw.githubusercontent.com/ycxzfforever/my_vim/master/vimrc.local`<br>
+拷贝到vim配置文件夹下`sudo cp vimrc.local /etc/vim/`
+# 6、安装相应插件
+执行`:PluginInstall`后便会自动安装所有插件，时间视网速而定，插件都不大，一般10分钟以内
+# 7、安装ack(ubuntu下为ack-grep)
+    sudo apt-get install ack-grep
+# 8、安装VIM（需vim版本7.4以上，vim --version查看,Ubuntu14.04以后基本上不需要重新安装vim了）
+    1、下载vim源码：`wget ftp://ftp.vim.org/pub/vim/unix/vim-7.4.tar.bz2`
+    2、解压：tar -xvf vim-7.4.tar.bz2 
+    3、安装Python相关：sudo apt-get install python-dev
+    4、安装编译环境：apt-get install ncurses-devel 
+    5、配置VIM：./configure --with-features=huge --enable-pythoninterp --enable-rubyinterp --enable-luainterp --enable-perlinterp --with-python-config-dir=/usr/lib/python2.7/config/ --enable-gui=gtk2 --enable-cscope --prefix=/usr
+    6、make
+    7、make install
+
+# 注：解决Linux下git每次都要输入用户名和密码
+先cd到根目录，执行`git config --global credential.helper store`命令
