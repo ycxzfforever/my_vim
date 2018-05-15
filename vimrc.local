@@ -102,23 +102,25 @@ Plugin 'tomasr/molokai'
 Plugin 'vim-scripts/phd'
 "=======主题3个========
 Plugin 'nathanaelkane/vim-indent-guides'    "可视化缩进
-Plugin 'derekwyatt/vim-fswitch'             "文件切换
-Plugin 'majutsushi/tagbar'                  "基于标签的标识符列表
+Plugin 'derekwyatt/vim-fswitch'             "文件切换 <Leader>sw
+Plugin 'majutsushi/tagbar'                  "基于标签的标识符列表 <F3>
 "====自动更新tags标签 开始=====
 Plugin 'vim-scripts/indexer.tar.gz'
 Plugin 'vim-scripts/DfrankUtil'
 Plugin 'vim-scripts/vimprj'
 "====自动更新tags标签 结束=====
-Plugin 'scrooloose/nerdtree'                "树型目录
-Plugin 'mileszs/ack.vim'                    "内容查找
+Plugin 'scrooloose/nerdtree'                "树型目录 <F2>
+Plugin 'mileszs/ack.vim'                    "内容查找  <Leader>a :Ack!
 Plugin 'dyng/ctrlsf.vim'                    "内容查找
-Plugin 'terryma/vim-multiple-cursors'       "多光标编辑功能
-Plugin 'scrooloose/nerdcommenter'           "注释插件
+Plugin 'terryma/vim-multiple-cursors'       "多光标编辑功能 <C-n>
+Plugin 'scrooloose/nerdcommenter'           "注释插件 <Leader>cc,<Leader>cu
 Plugin 'vim-scripts/AutoComplPop'           "补全自动弹出
+
 Plugin 'vim-scripts/OmniCppComplete'        "自动补全
 Plugin 'SirVer/ultisnips'                   "模板补全
-Plugin 'honza/vim-snippets'
-Plugin 'vim-scripts/code_complete'
+Plugin 'honza/vim-snippets'                 "自动补全 <tab>
+Plugin 'vim-scripts/code_complete'          "自动补全 <s-tab>
+
 "Plugin 'Valloric/YouCompleteMe'             "智能补全
 " 插件列表结束
 call vundle#end()

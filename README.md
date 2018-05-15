@@ -55,6 +55,7 @@ endif
     5、配置VIM：./configure --with-features=huge --enable-pythoninterp --enable-rubyinterp --enable-luainterp --enable-perlinterp --with-python-config-dir=/usr/lib/python2.7/config/ --enable-gui=gtk2 --enable-cscope --prefix=/usr
     6、make
     7、make install
-
+    或者：sudo aptitude install vim-gnome vim vim-common vim-tiny，aptitude类似于apt-get
+    [ubuntu 安装软件的一些命令aptitude，apt-get](https://blog.csdn.net/u013378306/article/details/70146194)
 # 注：解决Linux下git每次都要输入用户名和密码
 先cd到根目录，执行`git config --global credential.helper store`命令
