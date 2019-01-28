@@ -1,4 +1,4 @@
-"定义快捷键的前缀，即<Leader>
+
 let mapleader=";"
 set cursorline   "显示下划线
 set nocompatible "去掉讨厌的有关vi一致性模式，避免以前版本的一些bug和局限 
@@ -181,7 +181,7 @@ let g:ctrlsf_ackprg = 'ack-grep'   "设置ctrlsf 使用ag
 "使用 ctrlsf.vim 插件在工程内全局查找光标所在关键字，设置快捷键。快捷键速记法：search in project
 let g:ctrlsf_open_left = 0
 nnoremap <Leader>sp :CtrlSF<CR>
-nmap     <C-F> <Plug>CtrlSFPrompt 
+"nmap     <C-F> <Plug>CtrlSFPrompt 
 "**********查找插件ctrlsf设置 Ubuntu14.04没设置成功，报错***************
 
 "============树形目录设置 开始=========
@@ -254,7 +254,7 @@ function! UpdateCtags()
     endif
     execute ":cd " . curdir
 endfunction
-nmap <F10> :call UpdateCtags()<CR>
+nmap <F6> :call UpdateCtags()<CR>
 
 " 设置插件 indexer 调用 ctags 的参数
 " 默认 --c++-kinds=+p+l，重新设置为 --c++-kinds=+p+l+x+c+d+e+f+g+m+n+s+t+u+v
