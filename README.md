@@ -60,3 +60,5 @@ endif
 [ubuntu 安装软件的一些命令aptitude，apt-get](https://blog.csdn.net/u013378306/article/details/70146194)<br>
 # 注：解决Linux下git每次都要输入用户名和密码
 先cd到根目录，执行`git config --global credential.helper store`命令
+# 9、安装插件管理器vundle
+[安装方式参考](https://www.cnblogs.com/jiqing9006/p/10085340.html)
