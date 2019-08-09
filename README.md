@@ -60,5 +60,13 @@ endif
 [ubuntu 安装软件的一些命令aptitude，apt-get](https://blog.csdn.net/u013378306/article/details/70146194)<br>
 # 注：解决Linux下git每次都要输入用户名和密码
 先cd到根目录，执行`git config --global credential.helper store`命令
-# 9、安装插件管理器vundle
-[安装方式参考](https://www.cnblogs.com/jiqing9006/p/10085340.html)
+# 9、增加tmux.conf
+tmux是一个类似于screen终端管理软件，tmux.conf为其配置文件，需要在`$HOME`目录下链接为`.tmux.conf`;
+# 10、增加useradd.bashrc
+此配置文件为用户增加的环境配置，在`$HOME/.bashrc`中增加
+```vim
+###################### user add #############################
+if [ -f $HOME/my_vim/useradd.bashrc ] ; then
+    source $HOME/my_vim/useradd.bashrc
+fi
+```

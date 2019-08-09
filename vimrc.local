@@ -249,9 +249,9 @@ set tags+=$HOME/.vim/systags
 set tags+=$HOME/kbuild-frtos/tags
 "set tags+=./tags, ./../tags, ./*/tags
 set tags+=./tags
-"set tags+=/home/logread/EC20/ec20-openwrt/OpenWrt-SDK-andromeda-for-Linux-x86_64/package/uapps/ugpsd/tags
-set tags+=/home/logread/EC20/ec20-openwrt/OpenWrt-SDK-andromeda-for-Linux-x86_64/tags
-set tags+=/home/logread/OS2000-70/OpenWrt-SDK-imx6ul-for-Linux-i686/tags
+set tags+=/mnt/hgfs/D/Code/framework-develop/tags
+set tags+=/mnt/hgfs/D/Code/apps-develop/tags
+
 set autochdir
 function! UpdateCtags()
     let curdir=getcwd()
