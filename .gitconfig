@@ -1,0 +1,27 @@
+[http]
+[https]
+[credential]
+	helper = store
+#别名配置
+[alias]
+        rr = reset HEAD
+        br = branch -av
+        st = status
+        co = checkout
+    cob = checkout -b
+    cotb = checkout --track -b
+        ca = commit --amend
+        di = diff
+        dt = difftool
+        dc = diff --cached
+        dh = diff HEAD
+        cp = cherry-pick
+        lg = log --pretty=format:'%h |%an |%ai |%s'
+        lo = log --pretty=format:'%h |%an |%s' --since='4 days ago'
+        oneline = log --pretty=oneline --since='2 days ago'
+        onelog = log -p -1
+
+[user]
+        email = ycxzfforever@163.com
+        name = ycxzfforever
+

@@ -1,6 +1,12 @@
 ############################user add start######################################
 
 #git config提示及颜色配置
+if [ -f ~/.git-completion.bash ]; then
+    source ~/.git-completion.bash
+fi
+if [ -f ~/.git-prompt.sh ]; then
+    source ~/.git-prompt.sh
+fi
 export GIT_PS1_SHOWDIRTYSTATE=1
 export GIT_PS1_SHOWSTASHSTATE=1
 export GIT_PS1_SHOWUNTRACKEDFILES=1
@@ -37,3 +43,5 @@ export LESS_TERMCAP_us=$'\E[01;32m'
 
 #for colordiff
 alias cdiff='colordiff'
+alias ll='ls -alF --color=auto'
+
