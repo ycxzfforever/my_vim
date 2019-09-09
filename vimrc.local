@@ -70,7 +70,7 @@ map <S-F> :call FormatCode()<CR>
 func! FormatCode()
     exec "w"
     if &filetype == 'c' || &filetype == 'h'
-        exec "!astyle --style=linux -f -p -T4 s4 -S -N -L -m0 -M40 -U --suffix=none %" 
+        exec "!astyle --style=linux -p -T4 -s4 -S -N -L -m0 -M40 -U --suffix=none %" 
     elseif &filetype == 'cpp' || &filetype == 'cc' || &filetype == 'hpp'
         exec "!astyle --style=allman --suffix=none %"
     elseif &filetype == 'perl'

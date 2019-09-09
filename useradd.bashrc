@@ -44,4 +44,4 @@ export LESS_TERMCAP_us=$'\E[01;32m'
 #for colordiff
 alias cdiff='colordiff'
 alias ll='ls -alF --color=auto'
-
+alias vi='vim'
